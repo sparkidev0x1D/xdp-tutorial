@@ -1,5 +1,5 @@
 # -*- fill-column: 76; -*-
-#+TITLE: XDP Hands-On Tutorial
+#+TITLE: XDP Programming Hands-On Tutorial
 #+OPTIONS: ^:nil
 
 This repository contains a tutorial that aims to introduce you to the basic
@@ -38,13 +38,17 @@ This tutorial aims to be a practical introduction to the different steps
 needed to successfully write useful programs using the XDP system. We assume
 you have a basic understanding of Linux networking and how to configure it
 with the =iproute2= suite of tools, but assume no prior experience with eBPF
-or XDP.
+or XDP. Prior programming experience is also helpful: the lessons are all
+written in C and they include some basic pointer arithmetic and aliasing.
 
-The tutorial is a work in progress, and will be trial-run at the [[https://www.netdevconf.org/0x13/session.html?tutorial-XDP-hands-on][Netdev
-Conference]] in Prague in March 2019. However, we intend for it to (eventually)
-be self-contained and something that anyone can go through to learn the XDP
-basics. Input and contributions to advance towards this goal are very
-welcome; just open issues or pull requests in the [[https://github.com/xdp-project/xdp-tutorial/][Github repository]].
+The tutorial is a work in progress, and was initially created for use as a
+live tutorial at the [[https://www.netdevconf.org/0x13/session.html?tutorial-XDP-hands-on][Netdev Conference]] in Prague in March 2019. Since the
+kernel BPF subsystem continues to develop at a rapid pace, this tutorial has
+not kept up with all developments. However, everything presented here will
+work with recent kernels, and this tutorial functions as a self-contained
+introduction that anyone can go through to learn the XDP basics. Input and
+contributions to advance towards this goal are very welcome; just open
+issues or pull requests in the [[https://github.com/xdp-project/xdp-tutorial/][Github repository]].
 
 * First step: Setup dependencies
 
